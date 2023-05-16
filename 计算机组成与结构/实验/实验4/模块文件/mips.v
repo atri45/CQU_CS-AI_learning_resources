@@ -27,9 +27,7 @@ module mips(
     output wire[31:0] aluoutM,
 	output wire memwriteM,
 	output wire[31:0] pc,
-	output wire[31:0] writedata,
-	input [4:0] SW,
-    output wire[31:0]rfsw);
+	output wire[31:0] writedata);
 
     wire [31:0] instrD,pc_realnext;
     wire forwardAD, forwardBD,regWriteD, memtoRegD, memWriteD, branchD, aluSrcD, regDstD, jumpD, pcsrcD;
@@ -71,6 +69,6 @@ module mips(
     
     // datapath
     datapath dp(clk,rst,instrD,readdata,regWriteE,regWriteM,regWriteW,memtoRegE,memtoRegM,memtoRegW,
-                aluControlE,aluSrcE,regDstE,jumpD,branchD,pcsrcD,aluoutM,writedata,pc,stallD,flushE,SW,rfsw);
+                aluControlE,aluSrcE,regDstE,jumpD,branchD,pcsrcD,aluoutM,writedata,pc,stallD,flushE);
 	
 endmodule

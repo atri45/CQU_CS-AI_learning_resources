@@ -26,9 +26,7 @@ module regfile(
 	input wire we3,
 	input wire[4:0] ra1,ra2,wa3,
 	input wire[31:0] wd3,
-	output wire[31:0] rd1,rd2,
-	input[4:0] SW,
-	output wire[31:0]rfsw
+	output wire[31:0] rd1,rd2
     );
 
 	reg [31:0] rf[31:0];
@@ -40,7 +38,6 @@ module regfile(
 		end
 		
 	end
-    assign rfsw = rf[SW];
 	assign rd1 = (ra1 != 0) ? rf[ra1] : 0;
 	assign rd2 = (ra2 != 0) ? rf[ra2] : 0;
 endmodule

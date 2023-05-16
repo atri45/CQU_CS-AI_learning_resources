@@ -17,9 +17,7 @@ module datapath(
 		output[31:0] aluoutM,
 		output[31:0] writedataM,
         output [31:0]pc,
-        output stallD, flushE,
-        input [4:0] SW,
-        output wire[31:0]rfsw
+        output stallD, flushE
         );
 			
         
@@ -43,7 +41,7 @@ module datapath(
 		wire [4:0] writeregW;
 		wire[31:0]resultW;
         wire[31:0]rd1D,rd2D;
-		regfile rf(clk,rst,regwriteW,instrD[25:21],instrD[20:16],writeregW,resultW, rd1D,rd2D,SW,rfsw);
+		regfile rf(clk,rst,regwriteW,instrD[25:21],instrD[20:16],writeregW,resultW, rd1D,rd2D);
 		
 		// determine pcsrcD
 		wire [31:0] equalsrc1, equalsrc2;
