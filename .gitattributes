@@ -13,5 +13,4 @@ Flink的流处理_ filter=lfs diff=lfs merge=lfs -text
 数学实验教材电子版（刘琼荪主编）.pdf filter=lfs diff=lfs merge=lfs -text
 算法导论（原书第3版）.pdf filter=lfs diff=lfs merge=lfs -text
 重构：改善既有代码的设计.pdf filter=lfs diff=lfs merge=lfs -text
-数据库系统概念 filter=lfs diff=lfs merge=lfs -text
-（原书第6版）.pdf filter=lfs diff=lfs merge=lfs -text
+数据库系统概念（原书第6版）.pdf filter=lfs diff=lfs merge=lfs -text
