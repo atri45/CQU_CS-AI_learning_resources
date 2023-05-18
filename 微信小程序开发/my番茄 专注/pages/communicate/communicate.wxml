@@ -1,0 +1,4 @@
+<view class="text">无论您遇到任何问题，都可以联系我们的客服小gege</view>
+<view class="image">
+<image src="/image/weixin.jpg" mode="widthFix"></image>
+</view>

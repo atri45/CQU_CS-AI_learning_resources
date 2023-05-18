@@ -1,0 +1,6 @@
+<view style="display:flex;align-items: center;flex-direction: column">
+  <image src="/image/loading.jpg" mode="aspectFill"></image>
+  <text style="margin:20px">
+    番茄工作法是弗朗西斯科·西里洛于1992年创立的一种相对于GTD更微观的时间管理方法，是一种简单易行的时间管理方法，它的核心思想是集中精力完成工作，排除干扰，合理安排休息时间。番茄时钟可以帮助您实现这种工作方式，一个番茄时间一般为25分钟，计时开始后您需要全身心的投入到工作中，25分钟结束后会进入5分钟的休息计时，每过四个番茄时间后，会有一次20分钟的长休息时间。通过工作和休息的交替循环进行，可以使您更有效率、更健康的工作或学习。
+  </text>
+</view>
