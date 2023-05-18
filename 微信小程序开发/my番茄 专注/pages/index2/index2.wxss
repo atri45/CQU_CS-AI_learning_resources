@@ -1,0 +1,12 @@
+.call_us{
+    width:280rpx;
+    height: 90rpx;
+    border:2rpx solid  #ff6347;
+    border-radius: 20rpx;
+    margin: 0 auto;
+    line-height: 90rpx;
+    color: #ff6347;
+    text-align: center;
+    margin-top: 40rpx;
+  
+}

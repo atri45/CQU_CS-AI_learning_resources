@@ -1,0 +1,2 @@
+<view bindtap="goto_about" class="call_us">关于番茄</view>
+<view bindtap="goto_communicate" class="call_us">联系客服</view>

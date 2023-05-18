@@ -1,0 +1,6 @@
+page{
+  background-color: #efefef;
+}
+image{
+  margin-top: 60rpx;
+}

@@ -1,0 +1,106 @@
+.container{
+  padding: 5%;
+}
+.slider{
+  padding-top: 40rpx;
+  width: 650rpx;
+  margin:0 ;
+}
+.text{
+  text-align: center;
+  margin: 0rpx auto;
+  height: 110rpx;
+}
+.title{
+  font-size: 35rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+
+}
+.desc{
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #999999;
+}
+.grid-list{
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 1rpx solid #efefef;    
+  border-top: 1rpx solid #efefef; 
+  margin-top: 20rpx;
+}
+.grid-item{
+  width: 33.33%;
+  height: 200rpx;
+  display:flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center;  
+  border-right: 1rpx solid #efefef;     
+  border-bottom: 1rpx solid #efefef;    
+  box-sizing: border-box;     
+}
+
+.grid-item image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.cate_text{
+  color: black;
+}
+.cate_text_active{
+  color: #ff6347;
+}
+
+
+.startButton{
+  width:280rpx;
+  height: 90rpx;
+  border:2rpx solid  #ff6347;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  line-height: 90rpx;
+  color: #ff6347;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.clock {
+  overflow:hidden;
+  background-color: #ff6347;
+}
+
+.progress {
+  height:400rpx;
+  width:400rpx;
+  margin:140rpx auto;
+  position:relative;
+}
+
+.progress .progress_bg,.progress .progress_active {
+  width:400rpx;
+  height:400rpx;
+  position:absolute;
+}
+
+.progress .progress_text {
+  width:160rpx;
+  height:60rpx;
+  color:#fff;
+  position:absolute;
+  text-align:center;
+  top:170rpx;
+  left:120rpx;
+}
+
+.Btns .okBtn,.Btns .pauseBtn,.Btns .continueBtn ,.Btns .cancleBtn {
+    text-align: center;
+    width:280rpx;
+    height:80rpx;
+    line-height:80rpx;
+    color:#fff;
+    border:3rpx solid #fff;
+    border-radius: 20rpx;
+    margin:0 auto 20rpx auto;
+    color:#fff
+  }

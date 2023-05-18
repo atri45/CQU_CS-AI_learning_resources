@@ -1,0 +1,9 @@
+.text{
+  color: #ff6347;
+  text-align: center;
+  margin: 40rpx;
+}
+.image{
+  align-items: center; 
+  margin-left: 40rpx;
+}

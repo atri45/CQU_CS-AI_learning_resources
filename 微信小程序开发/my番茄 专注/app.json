@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index2/index2",
+    "pages/about/about",
+    "pages/communicate/communicate"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff6347",
+    "navigationBarTitleText": "My番茄|专注",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#ff6347",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "计时",
+      "iconPath": "/image/计时.png",
+      "selectedIconPath": "/image/计时 (1).png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "统计",
+      "iconPath": "/image/统计 (2).png",
+      "selectedIconPath": "/image/统计.png"
+    },
+    {
+      "pagePath": "pages/index2/index2",
+      "text": "联系我们",
+      "iconPath": "/image/联系我们.png",
+      "selectedIconPath": "/image/1.png"
+    }
+  ]
+  }
+  
+}
