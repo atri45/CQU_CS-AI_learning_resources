@@ -1,4 +1,4 @@
-# CQU_CS_learning_resources：CQU计算机专业学习资源
+# CQU_CS_learning_resources：CQU计算机专业与人工智能学习资源
 - 持续更新中……
 
 ### - 本人在专业学习过程中也遇到了不少困难，很多问题花了大量时间和精力，想找参考的资料也不好找，所以特意创建这个仓库，将整理归纳后的学习资源分享给学弟学妹们，好的东西就应该分享给更多人👍， 喜欢的话就点个Starred吧🫶, 有问题请联系我：1660696144@qq.com or zijian.zhang@kangry.net🤝
