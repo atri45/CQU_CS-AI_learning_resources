@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*body{*/
+/*    !*弹性布局*!*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    !*让页面高度占浏览器可视高度*!*/
+/*    height: 100vh;*/
+/*    background: #f8f9fa;*/
+/*}*/
+.container{
+    overflow: hidden;
+    margin: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+.container table{
+    border-collapse: collapse;
+}
+.container table tr th{
+    color: #fff;
+    background-color: #4fc3a1;
+}
+.container table tr th:nth-child(odd){
+    background-color: #324960;
+}
+.container table tr th,
+.container table tr td{
+    text-align: center;
+    padding: 10px 20px;
+}
+.container table tr td{
+    border: 1px solid rgb(200,200,200);
+}
+.container table tbody tr:nth-child(odd){
+    background-color: #f8f8f8;
+}
