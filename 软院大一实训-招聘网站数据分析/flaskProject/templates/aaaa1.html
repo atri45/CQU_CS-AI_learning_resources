@@ -1,0 +1,42 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>招聘网站数据检索</title>
+    <link rel="stylesheet" href="static/assets/css/aaaa1.css">
+</head>
+
+    <body>
+
+<!--数据表的显示-->
+        <div class="container">
+            <table>
+            <tr style="text-align:center">
+                    <th>岗位名称</th>
+                    <th>公司名称</th>
+                    <th>工作地点</th>
+                    <th>薪资</th>
+                    <th>公司性质</th>
+                    <th>公司规模</th>
+                    <th>工作待遇</th>
+                    <th>学历要求</th>
+            </tr>
+                {% for i in items %}
+                <tr style="text-align:center">
+                    <td>{{i.job_name}}</td>
+                    <td>{{i.company_name}}</td>
+                    <td>{{i.workarea_text}}</td>
+                    <td>{{i.providesalary_text}}</td>
+                    <td>{{i.companytype_text}}</td>
+                    <td>{{i.companysize_text}}</td>
+                    <td>{{i.jobwelf}}</td>
+                    <td>{{i.job_request}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+    </body>
+
+</html>

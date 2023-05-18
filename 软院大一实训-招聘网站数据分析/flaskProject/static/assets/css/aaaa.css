@@ -1,0 +1,40 @@
+.box2{
+    display: flex;
+
+}
+#job_name1{
+    text-align: justify;
+}
+.box3{
+    display: flex;
+
+}
+.box4{
+    display: flex;
+}
+.bigbox{
+    text-align: center;
+	background-color: #fff;
+	border-radius: 20px;
+	width: 680px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%,-50%);
+
+}
+.aaaa2{
+    	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+#content1{
+	padding: 8px 16px;
+	border: 2px solid #c4c7ce;
+}
+#content2{
+		padding: 8px 16px;
+	border: 2px solid #c4c7ce;
+}

@@ -1,0 +1,215 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon.ttf?0b792a1b5587fe1a8a3473ebfce7fdcc") format("truetype"),
+url("../fonts/flaticon.woff?0b792a1b5587fe1a8a3473ebfce7fdcc") format("woff"),
+url("../fonts/flaticon.woff2?0b792a1b5587fe1a8a3473ebfce7fdcc") format("woff2"),
+url("../fonts/flaticon.eot?0b792a1b5587fe1a8a3473ebfce7fdcc#iefix") format("embedded-opentype"),
+url("../fonts/") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-target-audience:before {
+    content: "\f101";
+}
+.flaticon-sales-funnel:before {
+    content: "\f102";
+}
+.flaticon-viral-marketing:before {
+    content: "\f103";
+}
+.flaticon-blogging:before {
+    content: "\f104";
+}
+.flaticon-mobile-marketing:before {
+    content: "\f105";
+}
+.flaticon-online-business:before {
+    content: "\f106";
+}
+.flaticon-promote:before {
+    content: "\f107";
+}
+.flaticon-email-marketing:before {
+    content: "\f108";
+}
+.flaticon-analysis:before {
+    content: "\f109";
+}
+.flaticon-affiliate-marketing:before {
+    content: "\f10a";
+}
+.flaticon-report:before {
+    content: "\f10b";
+}
+.flaticon-commission:before {
+    content: "\f10c";
+}
+.flaticon-consumer-behavior:before {
+    content: "\f10d";
+}
+.flaticon-subscription:before {
+    content: "\f10e";
+}
+.flaticon-live-stream:before {
+    content: "\f10f";
+}
+.flaticon-customer-review:before {
+    content: "\f110";
+}
+.flaticon-online-survey:before {
+    content: "\f111";
+}
+.flaticon-content:before {
+    content: "\f112";
+}
+.flaticon-market-research:before {
+    content: "\f113";
+}
+.flaticon-storytelling:before {
+    content: "\f114";
+}
+.flaticon-social-media:before {
+    content: "\f115";
+}
+.flaticon-mobile-marketing-1:before {
+    content: "\f116";
+}
+.flaticon-keywords:before {
+    content: "\f117";
+}
+.flaticon-location-marker:before {
+    content: "\f118";
+}
+.flaticon-ad-blocker:before {
+    content: "\f119";
+}
+.flaticon-user-engagement:before {
+    content: "\f11a";
+}
+.flaticon-returning-visitor:before {
+    content: "\f11b";
+}
+.flaticon-web-optimization:before {
+    content: "\f11c";
+}
+.flaticon-cost-per-click:before {
+    content: "\f11d";
+}
+.flaticon-b2b:before {
+    content: "\f11e";
+}
+.flaticon-banner:before {
+    content: "\f11f";
+}
+.flaticon-paid-content:before {
+    content: "\f120";
+}
+.flaticon-remarketing:before {
+    content: "\f121";
+}
+.flaticon-web-promotion:before {
+    content: "\f122";
+}
+.flaticon-ecommerce:before {
+    content: "\f123";
+}
+.flaticon-solution:before {
+    content: "\f124";
+}
+.flaticon-conversion:before {
+    content: "\f125";
+}
+.flaticon-organic-content:before {
+    content: "\f126";
+}
+.flaticon-impression-rate:before {
+    content: "\f127";
+}
+.flaticon-insight:before {
+    content: "\f128";
+}
+.flaticon-copywriter:before {
+    content: "\f129";
+}
+.flaticon-broadcast:before {
+    content: "\f12a";
+}
+.flaticon-growth:before {
+    content: "\f12b";
+}
+.flaticon-success:before {
+    content: "\f12c";
+}
+.flaticon-envelope:before {
+    content: "\f12d";
+}
+.flaticon-email:before {
+    content: "\f12e";
+}
+.flaticon-mail:before {
+    content: "\f12f";
+}
+.flaticon-phone:before {
+    content: "\f130";
+}
+.flaticon-phone-call:before {
+    content: "\f131";
+}
+.flaticon-telephone:before {
+    content: "\f132";
+}
+.flaticon-placeholder:before {
+    content: "\f133";
+}
+.flaticon-map:before {
+    content: "\f134";
+}
+.flaticon-develop:before {
+    content: "\f135";
+}
+.flaticon-logo-design:before {
+    content: "\f136";
+}
+.flaticon-graphic-design:before {
+    content: "\f137";
+}
+.flaticon-app-development:before {
+    content: "\f138";
+}
+.flaticon-resource:before {
+    content: "\f139";
+}
+.flaticon-trustworthy:before {
+    content: "\f13a";
+}
+.flaticon-honesty:before {
+    content: "\f13b";
+}
+.flaticon-technical-support:before {
+    content: "\f13c";
+}
+.flaticon-group:before {
+    content: "\f13d";
+}
+.flaticon-happiness:before {
+    content: "\f13e";
+}
+.flaticon-label:before {
+    content: "\f13f";
+}
+.flaticon-award:before {
+    content: "\f140";
+}
+.flaticon-badge:before {
+    content: "\f141";
+}
