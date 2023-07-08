@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>招聘网站信息可视化平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="{% static 'css/css2.css' %}" rel="stylesheet">
+    <link href="{% static 'css/all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">加载中...</span>
+    </div>
+</div>
+
+<div class="bg-light">
+    <div class="sidebar pe-3 pt-3 bg-light">
+        <nav class="navbar bg-white left-bar">
+            <a href="{% url 'visualization:data_visualization' %}" class="navbar-brand mx-4 mb-3">
+                <h4 class="text-primary"><i class="fa-solid fa-chart-user"></i>信息可视化平台</h4>
+            </a>
+            <div class="navbar-nav navbar-nav-custom">
+                <a href="{% url 'visualization:data_visualization' %}" class="nav-item nav-link active"><i class="fa-solid fa-square-poll-horizontal fa-bounce bg-white"></i>招聘信息</a>
+                <a href="{% url 'visualization:chart_visualization' %}" class="nav-item nav-link"><i class="fa-solid fa-chart-area bg-light"></i>可视化分析</a>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="content pe-3 bg-light">
+    <nav class="navbar navbar-expand bg-white navbar-light sticky-top px-4 py-0 mb-3 mt-3">
+        <a href="#" class="sidebar-toggler flex-shrink-0">
+            <i class="fa-solid fa-sliders"></i>
+        </a>
+        <div class="">
+            <form class="row" method="post" action="{% url 'visualization:job_search' %}">
+                {% csrf_token %}
+                <div class="col-sm-12 col-md-8">
+                    <input class="form-control" type="search" placeholder="请输入职位" name="job_title" required>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <button type="submit" class="btn btn-primary" id="search-button">搜索</button>
+                </div>
+            </form>
+        </div>
+        <div class="navbar-nav align-items-center ms-auto">
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="fa fa-bell me-lg-2"></i>
+                    <span class="d-none d-lg-inline-flex">通知</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                    <a href="#" class="dropdown-item">
+                        <div class="d-flex align-items-center">
+                            <div class="ms-2">
+                                <h6 class="fw-normal mb-0">收到一条系统通知</h6>
+                                <small>15 minutes ago</small>
+                            </div>
+                        </div>
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item">
+                        <div class="d-flex align-items-center">
+                            <div class="ms-2">
+                                <h6 class="fw-normal mb-0">收到一条系统通知</h6>
+                                <small>20 minutes ago</small>
+                            </div>
+                        </div>
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item text-center">查看所有通知</a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <img class="rounded-circle me-lg-2" src="{% static 'picture/user.jpg' %}" alt="" style="width: 40px; height: 40px;">
+                    <span class="d-none d-lg-inline-flex">绵阳</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                    <a href="#" class="dropdown-item centered">个人信息</a>
+                    <hr class="dropdown-divider">
+                    <a href="" class="dropdown-item centered">退出</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-white ps-3 pt-4 pb-3 pe-3" id="mid-bar">
+        <h4>职位信息</h4>
+
+        <div id="myCustomTopBar1" class="row">
+            <div class="col-sm-12 col-md-2">
+                每页显示：
+                <select id="page-length" class="form-select">
+                    <option value="9">默认</option>
+                    <option value="10">10条</option>
+                    <option value="20">20条</option>
+                    <option value="50">50条</option>
+                    <option value="100">100条</option>
+                    <option value="200">200条</option>
+                </select>
+            </div>
+            <div class="col-sm-12 col-md-1"></div>
+            <div class="col-sm-12 col-md-2">
+                搜索职位名称：
+                <input class="form-control bg-transparent" type="text" id="search-job_name" placeholder="输入职位名称">
+            </div>
+            <div class="col-sm-12 col-md-1"></div>
+            <div class="col-sm-12 col-md-2">
+                搜索城市：
+                <input class="form-control bg-transparent" type="text" id="search-city" placeholder="输入城市">
+            </div>
+            <div class="col-sm-12 col-md-1"></div>
+            <div class="col-sm-12 col-md-2">
+                学历要求：
+                <select id="education" class="form-select">
+                    <option value="">全部</option>
+                    <option value="无学历要求">无学历要求</option>
+                    <option value="初中及以下">初中及以下</option>
+                    <option value="中技/中专">中技/中专</option>
+                    <option value="高中">高中</option>
+                    <option value="大专">大专</option>
+                    <option value="本科">本科</option>
+                    <option value="硕士">硕士</option>
+                    <option value="博士">博士</option>
+                </select>
+            </div>
+            <div class="col-sm-12 col-md-1"></div>
+        </div>
+        <div id="myCustomTopBar2" class="row">
+            <div class="col-sm-12 col-md-2">
+                搜索公司名称：
+                <input class="form-control bg-transparent" type="text" id="search-company_name" placeholder="公司名称">
+            </div>
+            <div class="col-sm-12 col-md-1"></div>
+            <div class="col-sm-12 col-md-2">
+                搜索行业：
+                <input class="form-control bg-transparent" type="text" id="search-industry" placeholder="输入行业">
+            </div>
+            <div class="col-sm-12 col-md-1"></div>
+            <div class="col-sm-12 col-md-2">
+                搜索基本信息：
+                <input class="form-control bg-transparent" type="text" id="search-tags" placeholder="输入基本信息">
+            </div>
+            <div class="col-sm-12 col-md-1"></div>
+            <div class="col-sm-12 col-md-2">
+                公司性质：
+                <select id="company-nature" class="form-select">
+                    <option value="">全部</option>
+                    <option value="民营">民营</option>
+                    <option value="国企">国企</option>
+                    <option value="合资">合资</option>
+                    <option value="已上市">已上市</option>
+                    <option value="创业公司">创业公司</option>
+                    <option value="事业单位">事业单位</option>
+                    <option value="非营利组织">非营利组织</option>
+                    <option value="外资（欧美）">外资（欧美）</option>
+                    <option value="外资（非欧美）">外资（非欧美）</option>
+                    <option value="外企代表处">外企代表处</option>
+                </select>
+            </div>
+            <div class="col-sm-12 col-md-1"></div>
+        </div>
+    </div>
+
+    <div class="bg-white p-4 mt-3 table-account">
+        <table class="table" id="jobTable">
+            <thead>
+                <tr>
+                    <th scope="col">序号</th>
+                    <th scope="col">职位名</th>
+                    <th scope="col">最低薪资</th>
+                    <th scope="col">最高薪资</th>
+                    <th scope="col">城市</th>
+                    <th scope="col">经验</th>
+                    <th scope="col">学历</th>
+                    <th scope="col">基本信息</th>
+                    <th scope="col">公司名</th>
+                    <th scope="col">公司性质</th>
+                    <th scope="col">公司规模</th>
+                    <th scope="col">行业</th>
+                    <th scope="col">备注</th>
+                    <th scope="col">链接</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for job in jobs %}
+                <tr>
+                    <th scope="row">{{ forloop.counter }}</th>
+                    <td>{{ job.job_name }}</td>
+                    <td>{{ job.min_salary }}</td>
+                    <td>{{ job.max_salary }}</td>
+                    <td>{{ job.city }}</td>
+                    <td>{{ job.experience }}</td>
+                    <td>{{ job.education }}</td>
+                    <td class="word-break">{{ job.tags }}</td>
+                    <td>{{ job.company_name }}</td>
+                    <td>{{ job.company_nature }}</td>
+                    <td>{{ job.company_size }}</td>
+                    <td>{{ job.industry }}</td>
+                    <td>{{ job.remarks_str }}</td>
+                    <td><a href="{{ job.job_link }}" target="_blank">查看工作</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa-solid fa-up-long"></i></a>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/rocket-loader.min.js' %}" data-cf-settings="3029259e35d7bc1c98cd40a8-|49" defer></script>
+<script src="{% static 'js/data-table.js' %}"></script>
+</body>
+</html>
