@@ -1,0 +1,36 @@
+asgiref @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_cchykh5sgr/croots/recipe/asgiref_1661287542702/work
+astroid==2.15.1
+brotlipy==0.7.0
+certifi @ file:///C:/b/abs_4a0polqwty/croot/certifi_1683875377622/work/certifi
+cffi @ file:///C:/b/abs_49n3v2hyhr/croot/cffi_1670423218144/work
+colorama==0.4.6
+cryptography @ file:///C:/b/abs_8ecplyc3n2/croot/cryptography_1677533105000/work
+dill==0.3.6
+Django @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_eeor5o9jj8/croots/recipe/django_1661292534510/work
+docstring-to-markdown==0.12
+flake8==6.0.0
+idna @ file:///C:/b/abs_bdhbebrioa/croot/idna_1666125572046/work
+mccabe==0.7.0
+packaging==23.0
+Pillow==9.4.0
+platformdirs==3.2.0
+pycodestyle==2.10.0
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydocstyle==6.2.3
+pyflakes==3.0.1
+pylint==2.17.1
+PyMySQL @ file:///C:/ci/pymysql_1610464861530/work
+pyOpenSSL @ file:///C:/b/abs_552w85x1jz/croot/pyopenssl_1677607703691/work
+PySocks @ file:///C:/ci/pysocks_1605307512533/work
+python-lsp-server==1.7.1
+pytoolconfig==1.2.5
+rope==1.7.0
+selenium @ file:///C:/ci/selenium_1614268120390/work
+sqlparse @ file:///C:/b/abs_83jn6owfpc/croot/sqlparse_1668793499314/work
+tomli==2.0.1
+tomlkit==0.11.6
+tqdm @ file:///C:/b/abs_f76j9hg7pv/croot/tqdm_1679561871187/work
+tzdata @ file:///tmp/build/80754af9/python-tzdata_1611693927741/work
+urllib3 @ file:///C:/b/abs_889_loyqv4/croot/urllib3_1686163174463/work
+whatthepatch==1.0.4
+win-inet-pton @ file:///C:/ci/win_inet_pton_1605306162074/work
